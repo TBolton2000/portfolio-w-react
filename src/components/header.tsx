@@ -18,16 +18,16 @@ export default function Header(props: HeaderProps) {
     };
 
     return (
-        <AppBar id={"appbar"} position="fixed">
+        <div>
             <Toolbar>
                 <Typography variant="h5">Trevor Bolton's Porfolio</Typography>
-                
+                <Tabs value={props.selectedPage} onChange={handleChange}>
+                { props.pageNames.map( (pageName: string)=>
+                    <Tab label={pageName} />
+                )}
+                </Tabs>
             </Toolbar>
-            <Tabs value={props.selectedPage} onChange={handleChange}>
-            { props.pageNames.map( (pageName: string)=>
-                <Tab label={pageName} />
-            )}
-            </Tabs>
-        </AppBar>
+            
+        </div>
     );
 }

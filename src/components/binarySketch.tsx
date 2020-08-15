@@ -44,6 +44,7 @@ export default class BinarySketch extends React.Component<BinarySketchProps> {
         this.canvas = p.createCanvas(p.windowWidth, p.windowHeight); //.parent(canvasParentRef);
         this.canvas.position(0, 0);
         this.canvas.style("z-index", -1);
+        this.canvas.style("position","fixed");
         this.sideLength = p.windowWidth > p.windowHeight ? p.windowWidth / 75 : p.windowHeight / 75;
         p.textSize(this.sideLength);
         this.numCols = p.ceil(p.windowWidth / this.sideLength) + 1;
