@@ -49,7 +49,17 @@ function App() {
     const appBarStyle: CSSProperties = {
         background: "rgb(33, 150, 243)",
         color: "white",
-    }
+    };
+
+    const pageWrap: CSSProperties = {
+        position: "relative",
+        minHeight: "100vh"
+    };
+
+    const contentWrap: CSSProperties = {
+        paddingBottom: "48px",
+        minHeight: "100vh",
+    };
 
     let selectedElement = ((selectedPage, pageNames) => {
         switch (pageNames[selectedPage]){
@@ -66,40 +76,42 @@ function App() {
 
     return (
         <Root scheme={scheme}>
+            <BinarySketch isHome={selectedPage === 0}></BinarySketch>
             <CssBaseline />
+            <div style={pageWrap}>
+            <div style={contentWrap}>
             <Header style={appBarStyle}>
                 <MyHeader pageNames={pageNames} selectedPage={selectedPage} onChange={setSelectedPage}/>
             </Header>
             <Content>
                 {selectedElement}
             </Content>
-            <BinarySketch isHome={selectedPage === 0}></BinarySketch>
+            </div>
             <Footer>
-                <Container>
-                    <Grid container>
-                        <Grid item>
-                            <IconButton>
-                                <EmailIcon />
-                            </IconButton>
-                        </Grid>
-                        <Grid item>
-                            <IconButton>
-                                <GitHubIcon />
-                            </IconButton>
-                        </Grid>
-                        <Grid item>
-                            <IconButton>
-                                <LinkedInIcon />
-                            </IconButton>
-                        </Grid>
-                        <Grid item>
-                            <IconButton>
-                                <HomeIcon />
-                            </IconButton>
-                        </Grid>
+                <Grid container alignContent="center" justify="center">
+                    <Grid item>
+                        <IconButton href="mailto:TBolton2000@aol.com">
+                            <EmailIcon />
+                        </IconButton>
                     </Grid>
-                </Container>
+                    <Grid item>
+                        <IconButton href="https://github.com/TBolton2000">
+                            <GitHubIcon />
+                        </IconButton>
+                    </Grid>
+                    <Grid item>
+                        <IconButton href="https://www.linkedin.com/in/trevor-bolton-428158192/">
+                            <LinkedInIcon />
+                        </IconButton>
+                    </Grid>
+                    <Grid item>
+                        <IconButton onClick={()=>{setSelectedPage(0);}}>
+                            <HomeIcon/>
+                        </IconButton>
+                    </Grid>
+                </Grid>
             </Footer>
+            </div>
         </Root>);
     // <ThemeProvider theme={theme}>
     //     <Header pageNames={pageNames} selectedPage={selectedPage} onChange={setSelectedPage}/>

@@ -45,13 +45,14 @@ export default class BinarySketch extends React.Component<BinarySketchProps> {
         this.canvas.position(0, 0);
         this.canvas.style("z-index", -1);
         this.canvas.style("position","fixed");
+        this.canvas.style("height","100vh");
         this.sideLength = p.windowWidth > p.windowHeight ? p.windowWidth / 75 : p.windowHeight / 75;
         p.textSize(this.sideLength);
         this.numCols = p.ceil(p.windowWidth / this.sideLength) + 1;
         this.numRows = p.ceil(p.windowHeight / this.sideLength) + 1;
         //this.matrix = new Array(this.numRows).fill(-1).map(() => new Array(this.numCols).fill(-1));
         //this.cout = p5.createP("Start");
-        p.frameRate(2);
+        p.frameRate(1);
     };
 
     onResize = (p: p5) => {
