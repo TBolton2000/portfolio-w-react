@@ -4,6 +4,8 @@ import theme from "./components/theme";
 import MyHeader from "./components/header";
 import Home from "./components/home";
 import About from "./components/about";
+import Projects from "./components/projects";
+import Resume from "./components/resume";
 import { MuiThemeProvider as ThemeProvider } from "@material-ui/core/styles";
 import styled from "styled-components";
 import Layout, {
@@ -43,7 +45,7 @@ scheme.configureHeader((builder) => {
 
 
 function App() {
-    const pageNames = ["Home", "About", "Experiece", "Portfolio", "Contact", "Resume"]
+    const pageNames = ["Home", "About", "Projects", "Resume"]
     const [selectedPage, setSelectedPage] = useState(0);
 
     const appBarStyle: CSSProperties = {
@@ -67,10 +69,10 @@ function App() {
                 return <Home />;
             case "About":
                 return <About />;
-            case "Experience":
-            case "Porfolio":
-            case "Contact":
+            case "Projects":
+                return <Projects />;
             case "Resume":
+                return <Resume />
         };
     }) (selectedPage, pageNames);
 
