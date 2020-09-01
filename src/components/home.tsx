@@ -4,7 +4,7 @@ import { CSSProperties } from "@material-ui/styles";
 
 export default function Home() {
     const bottomLeftAnchor: CSSProperties = {
-        position: "absolute",
+        position: "relative",
         background: "white",
         left: 0,
         bottom: 0,

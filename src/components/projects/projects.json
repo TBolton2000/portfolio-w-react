@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Multithreaded Web Scraper",
+        "date": "August-September 2020",
+        "body": "A web app encouraging users to flex both their muscles and their brains. The concept was to create a mobile app that would allow people to explore their communities and make geolocation art by placing pins at their location and connecting to other pins.",
+        "imageUrl": "https://www.webharvy.com/images/web%20scraping.png",
+        "labels": ["C++", "WinSocket", "Google Firebase", "React.js", "API", "Team Lead", "In-class"]
+    },
+    {
+        "title": "Simple Paint Application",
+        "date": "August-September 2020",
+        "body": "A basic recreation of Microsoft Paint using OpenGL, GLEW, and GLFW. It allows the user to draw on a canvas using different colors, brush shapes, and brush sizes. ",
+        "imageUrl": "https://tbolton2000.github.io/static/img/toy-paint.png",
+        "labels": ["C++", "OpenGL", "Graphics", "In-class"]
+    },
+    {
+        "title": "Pen Runners",
+        "date": "March-April 2020",
+        "body": "A web app encouraging users to flex both their muscles and their brains. The concept was to create a mobile app that would allow people to explore their communities and make geolocation art by placing pins at their location and connecting to other pins.",
+        "imageUrl": "https://tbolton2000.github.io/static/img/pen-runners.png",
+        "link": "https://github.com/TBolton2000/pen-runners",
+        "labels": ["JavaScript", "Web Development", "Google Firebase", "React.js", "API", "Team Lead", "In-class"]
+    },
+    {
+        "title": "Portfolio in React",
+        "date": "August 2020",
+        "body": "The website you are currently visiting. This is a revision of a previous portofolio website with more creativity and better design. I also plan to host more creative coding/animations on this page in the near future.",
+        "imageUrl": "https://tbolton2000.github.io/static/img/portfolio-home-page.png",
+        "link": "https://github.com/TBolton2000/portfolio-w-react",
+        "labels": ["TypeScript", "Web Development", "React.js", "Personal"]
+    },
+    {
+        "title": "Toy Tetris",
+        "date": "July-September 2020",
+        "body": "An implementation of the famous game of Tetris using the Simple and Fast Multimedia Library (SFML) in C++. A fun side project of practicing using Object Oriented Design to construct a game.",
+        "imageUrl": "https://tbolton2000.github.io/static/img/my-tetris.png",
+        "link": "https://github.com/TBolton2000/toy-tetris",
+        "labels": ["C++", "STL", "Game Dev", "Graphics", "Personal"]
+    },
+    {
+        "title": "Aggie Honor Bot",
+        "date": "Jan 25-26, 2020",
+        "body": "A project from TAMUhack 2020 where my team implemented my idea of a GroupMe bot that encourages academic integrity in class group chats. Utilized the GroupMe API to monitor chatrooms and protect students from other's academic dishonesty.",
+        "imageUrl": "https://tbolton2000.github.io/static/img/tamu-hack.png",
+        "labels": ["JavaScript", "Node.JS", "API", "Team Lead", "Group"]
+    },
+    {
+        "title": "Data Structures and Algorithms",
+        "date": "August-November 2019",
+        "body": "My implementation of several data structures and algorithms in C++. From stacks and priority queues to hash tables and self-balancing BSTs, we were tasked with implementing these data structures from scratch using C++",
+        "imageUrl": "https://www.cdn.geeksforgeeks.org/wp-content/uploads/Competitive-Programming-1.jpg",
+        "labels": ["C++", "STL", "Data Structures", "API", "In-class"]
+    },
+    {
+        "title": "Football Statistics Database Application",
+        "date": "February-March 2020",
+        "body": "A group project in which we used Java to create a GUI application that interfaced with a PostgreSQL database in order to query data in order to answer questions from the past 7 years of College Football statistics",
+        "imageUrl": "https://tbolton2000.github.io/static/img/money-foot-ball.png",
+        "labels": ["Java", "PostgreSQL", "Databases", "Group", "In-class"]
+    }
+]

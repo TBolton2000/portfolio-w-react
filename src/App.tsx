@@ -4,7 +4,7 @@ import theme from "./components/theme";
 import MyHeader from "./components/header";
 import Home from "./components/home";
 import About from "./components/about";
-import Projects from "./components/projects";
+import Projects from "./components/projects/projects";
 import Resume from "./components/resume";
 import { MuiThemeProvider as ThemeProvider } from "@material-ui/core/styles";
 import styled from "styled-components";
@@ -59,7 +59,7 @@ function App() {
     };
 
     const contentWrap: CSSProperties = {
-        paddingBottom: "48px",
+        paddingBottom: "60px",
         minHeight: "100vh",
     };
 

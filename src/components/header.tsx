@@ -22,8 +22,8 @@ export default function Header(props: HeaderProps) {
             <Toolbar>
                 <Typography variant="h5">Trevor Bolton's Porfolio</Typography>
                 <Tabs value={props.selectedPage} onChange={handleChange}>
-                { props.pageNames.map( (pageName: string)=>
-                    <Tab label={pageName} />
+                { props.pageNames.map( (pageName: string, index)=>
+                    <Tab label={pageName} key={index}/>
                 )}
                 </Tabs>
             </Toolbar>
