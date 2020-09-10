@@ -4,7 +4,7 @@
         "date": "August-September 2020",
         "body": "A web app encouraging users to flex both their muscles and their brains. The concept was to create a mobile app that would allow people to explore their communities and make geolocation art by placing pins at their location and connecting to other pins.",
         "imageUrl": "https://www.webharvy.com/images/web%20scraping.png",
-        "labels": ["C++", "WinSocket", "Google Firebase", "React.js", "API", "Team Lead", "In-class"]
+        "labels": ["C++", "WinSocket", "Multithreading", "HTTP", "TCP/IP", "In-class"]
     },
     {
         "title": "Simple Paint Application",
